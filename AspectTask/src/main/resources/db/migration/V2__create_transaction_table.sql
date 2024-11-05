@@ -1,0 +1,6 @@
+CREATE TABLE Transaction (
+    id SERIAL PRIMARY KEY,
+    account_id INT NOT NULL REFERENCES Account(id) ON DELETE CASCADE,
+    amount NUMERIC(15, 2) NOT NULL,
+    transaction_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
