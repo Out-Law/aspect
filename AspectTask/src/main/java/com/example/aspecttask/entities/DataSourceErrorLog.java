@@ -11,8 +11,8 @@ import lombok.Setter;
 public class DataSourceErrorLog {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "events_seq")
-    @SequenceGenerator(name = "events_seq")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "dataSourceErrorLogs_seq")
+    @SequenceGenerator(name = "dataSourceErrorLogs_seq")
     @Column(name = "id", nullable = false)
     private Long id;
 

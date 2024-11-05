@@ -13,8 +13,8 @@ import java.math.BigDecimal;
 public class Account {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "events_seq")
-    @SequenceGenerator(name = "events_seq")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "accounts_seq")
+    @SequenceGenerator(name = "accounts_seq")
     @Column(name = "id", nullable = false)
     private Long id;
 

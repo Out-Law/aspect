@@ -4,6 +4,9 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.math.BigDecimal;
+import java.time.OffsetDateTime;
+
 @Getter
 @Setter
 @Entity
@@ -11,8 +14,8 @@ import lombok.Setter;
 public class Transaction {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "events_seq")
-    @SequenceGenerator(name = "events_seq")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "transactions_seq")
+    @SequenceGenerator(name = "transactions_seq")
     @Column(name = "id", nullable = false)
     private Long id;
 
